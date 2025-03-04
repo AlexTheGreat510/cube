@@ -28,4 +28,4 @@ jobs:
       run: g++ -o cube C++/cube.cpp -Wall
   
     - name: Build c cube
-      run: gcc -o cube C/cube.cpp -Wall
+      run: gcc -o cube C/cube.c -Wall
