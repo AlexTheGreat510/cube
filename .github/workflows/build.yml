@@ -21,5 +21,11 @@ jobs:
       with:
         go-version: '1.20'
 
-    - name: Build
+    - name: Build go cube
       run: go build Golang/cube.go
+
+    - name: Build c++ cube
+      run: g++ -o cube C++/cube.cpp -Wall
+  
+    - name: Build c cube
+      run: gcc -o cube C/cube.cpp -Wall
